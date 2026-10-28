@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="pokedex">
+    <!-- Top Sensor & Indicator Lights -->
+    <div class="pokedex-header">
+      <div class="big-sensor">
+        <div class="sensor-glare"></div>
+      </div>
+      <div class="small-indicators">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+    </div>
+
+    <!-- Screen Bezel & Retro LCD Display -->
+    <div class="screen-bezel">
+      <div class="bezel-top-lights">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="screen">
+        <img id="pokemonsprite" src="" alt="Pokémon Sprite" style="display: none;">
+      </div>
+      <div class="bezel-bottom">
+        <span class="bezel-red-button"></span>
+        <div class="bezel-speaker">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <input type="text" id="pokemonname" placeholder="ENTER POKÉMON..." autocomplete="off">
+      <button onclick="fetchdata()">SEARCH</button>
+    </div>
+  </div>
+
+  <script src="pokemon.js"></script>
+</body>
+</html>
